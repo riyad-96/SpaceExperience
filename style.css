@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&family=Ubuntu:wght@300;400;500;700&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css");
+
+::selection{
+  background: #2f4262;
+}
+:root{
+  --poppins: 'poppins', sans-serif;
+  --ubuntu: 'ubuntu', sans-serif;
+}
+html, body{
+  width: 100%;
+  height: 100%;
+}
+*, *::before, *::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-image: url(bg2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+header{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  padding: 0 5vw
+}
+h2{
+  font-family: var(--ubuntu);
+  font-size: 2vw;
+  color: #ffffffc5;
+}
+
+.container{
+  width: 100%;
+  height: calc(100% - 100px);
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.text_area{
+  width: 100%;
+  height: 50%;
+  text-align: center;
+  padding: 4vw 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h1{
+  font-family: var(--ubuntu);
+  font-size: 4vw;
+}
+p{
+  font-family: var(--poppins);
+  margin-top: 2vw;
+  font-size: 1.5vw;
+}
+
+.next_area{
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  padding: 4vw 0;
+}
+.next{
+  width: 150px;
+  height: 50px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+  overflow: hidden;
+  
+  &:hover{
+    background-color: #2f42624f;
+    backdrop-filter: blur(2px);
+    transform: translateY(-3px);
+  }
+}
+.next a{
+  font-size: 1.3vw;
+  text-decoration: none;
+  color: #fff;
+  font-family: var(--poppins);
+  display: block;
+  padding: 10px 30px;
+}
+.next a i{
+  font-size: 1vw;
+  margin-left: 10px;
+}
+
+@media (max-width: 600px) {
+  h2{
+    font-size: 7vw;
+  }
+  h1{
+    font-size: 10vw;
+  }
+  p{
+    margin-top: 2vw;
+    font-size: 4vw;
+    width: 90%;
+  }
+
+  .next_area{
+    padding: 100px 0;
+  }
+
+  .next{
+    border-radius: 3px;
+    background: #ffffff18;
+    backdrop-filter: blur(2px);
+  }
+  .next a{
+    font-size: 5vw;
+    padding:10px 35px;
+  }
+  .next a i{
+    font-size: 4vw;
+  }
+}
